@@ -1,6 +1,7 @@
 {
   "images" : [
     {
+      "filename" : "landmark_app_icon_40x40-1.png",
       "idiom" : "iphone",
       "scale" : "2x",
       "size" : "20x20"
@@ -31,6 +32,7 @@
       "size" : "40x40"
     },
     {
+      "filename" : "landmark_app_icon_120x120-1.png",
       "idiom" : "iphone",
       "scale" : "2x",
       "size" : "60x60"
@@ -71,6 +73,7 @@
       "size" : "40x40"
     },
     {
+      "filename" : "landmark_app_icon_76x76.png",
       "idiom" : "ipad",
       "scale" : "1x",
       "size" : "76x76"
@@ -89,6 +92,147 @@
       "idiom" : "ios-marketing",
       "scale" : "1x",
       "size" : "1024x1024"
+    },
+    {
+      "filename" : "landmark_app_icon_100x100.png",
+      "idiom" : "universal",
+      "scale" : "1x",
+      "size" : "1024x1024"
+    },
+    {
+      "filename" : "landmark_app_icon_1024x1024-1.png",
+      "idiom" : "universal",
+      "scale" : "1x",
+      "size" : "1024x1024"
+    },
+    {
+      "filename" : "landmark_app_icon_48x48.png",
+      "idiom" : "universal",
+      "scale" : "1x",
+      "unassigned" : true
+    },
+    {
+      "filename" : "landmark_app_icon_55x55.png",
+      "idiom" : "universal",
+      "scale" : "1x",
+      "unassigned" : true
+    },
+    {
+      "filename" : "landmark_app_icon_58x58-1.png",
+      "idiom" : "universal",
+      "scale" : "1x",
+      "unassigned" : true
+    },
+    {
+      "filename" : "landmark_app_icon_58x58-2.png",
+      "idiom" : "universal",
+      "scale" : "1x",
+      "unassigned" : true
+    },
+    {
+      "filename" : "landmark_app_icon_58x58.png",
+      "idiom" : "universal",
+      "scale" : "1x",
+      "unassigned" : true
+    },
+    {
+      "filename" : "landmark_app_icon_80x80-1.png",
+      "idiom" : "universal",
+      "scale" : "1x",
+      "unassigned" : true
+    },
+    {
+      "filename" : "landmark_app_icon_80x80-2.png",
+      "idiom" : "universal",
+      "scale" : "1x",
+      "unassigned" : true
+    },
+    {
+      "filename" : "landmark_app_icon_80x80.png",
+      "idiom" : "universal",
+      "scale" : "1x",
+      "unassigned" : true
+    },
+    {
+      "filename" : "landmark_app_icon_87x87-1.png",
+      "idiom" : "universal",
+      "scale" : "1x",
+      "unassigned" : true
+    },
+    {
+      "filename" : "landmark_app_icon_87x87.png",
+      "idiom" : "universal",
+      "scale" : "1x",
+      "unassigned" : true
+    },
+    {
+      "filename" : "landmark_app_icon_88x88.png",
+      "idiom" : "universal",
+      "scale" : "1x",
+      "unassigned" : true
+    },
+    {
+      "filename" : "landmark_app_icon_120x120.png",
+      "idiom" : "universal",
+      "scale" : "1x",
+      "unassigned" : true
+    },
+    {
+      "filename" : "landmark_app_icon_152x152.png",
+      "idiom" : "universal",
+      "scale" : "1x",
+      "unassigned" : true
+    },
+    {
+      "filename" : "landmark_app_icon_167x167.png",
+      "idiom" : "universal",
+      "scale" : "1x",
+      "unassigned" : true
+    },
+    {
+      "filename" : "landmark_app_icon_172x172.png",
+      "idiom" : "universal",
+      "scale" : "1x",
+      "unassigned" : true
+    },
+    {
+      "filename" : "landmark_app_icon_180x180.png",
+      "idiom" : "universal",
+      "scale" : "1x",
+      "unassigned" : true
+    },
+    {
+      "filename" : "landmark_app_icon_196x196.png",
+      "idiom" : "universal",
+      "scale" : "1x",
+      "unassigned" : true
+    },
+    {
+      "filename" : "landmark_app_icon_216x216.png",
+      "idiom" : "universal",
+      "scale" : "1x",
+      "unassigned" : true
+    },
+    {
+      "filename" : "landmark_app_icon_40x40-2.png",
+      "idiom" : "universal",
+      "scale" : "1x",
+      "size" : "40x40",
+      "unassigned" : true
+    },
+    {
+      "filename" : "landmark_app_icon_40x40.png",
+      "idiom" : "universal",
+      "scale" : "1x",
+      "size" : "40x40",
+      "unassigned" : true
+    },
+    {
+      "filename" : "landmark_app_icon_1024x1024.png",
+      "idiom" : "universal",
+      "scale" : "1x",
+      "size" : "1024x1024",
+      "unassigned" : true
     }
   ],
   "info" : {
