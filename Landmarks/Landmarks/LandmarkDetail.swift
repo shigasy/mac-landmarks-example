@@ -9,20 +9,22 @@
 import SwiftUI
 
 struct LandmarkDetail: View {
+    var landmark: Landmark
+    
     var body: some View {
-        VStack{
+        VStack {
             // SwiftUIのViewのメソッドとしてframeが用意されている
             // UIViewRepresentableはViewプロトコルを準拠している
-            MapView().edgesIgnoringSafeArea(.top).frame(height: 300)
+            MapView(coordinate: landmark.locationCoordinate).edgesIgnoringSafeArea(.top).frame(height: 300)
             // 画像を上に移動して、テキストのためのスペースを作成
-            CircleImage().offset(y: -130).padding(.bottom, -130)
+            CircleImage(Image: landmark.image).offset(y: -130).padding(.bottom, -130)
             VStack(alignment: .leading) {
-                Text("Turtle Rock")
+                Text(landmark.name)
                     .font(.title)
                 HStack {
-                    Text("Joshua Tree national Park").font(.subheadline)
+                    Text(landmark.park).font(.subheadline)
                     Spacer()
-                    Text("California").font(.subheadline)
+                    Text(landmark.state).font(.subheadline)
                 }
             }.padding()
             Spacer()
@@ -32,6 +34,6 @@ struct LandmarkDetail: View {
 
 struct LandmarkDetail_Previews: PreviewProvider {
     static var previews: some View {
-        LandmarkDetail()
+        LandmarkDetail(landmark: landmarkData[1])
     }
 }
