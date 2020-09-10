@@ -11,23 +11,34 @@
 import SwiftUI
 
 struct LandmarkList: View {
+    @State var showFavoritesOnly = false
+    
     var body: some View {
         NavigationView {
-            List(landmarkData) { landmark in
-                NavigationLink(destination: LandmarkDetail(landmark: landmark)) {
-                    LandmarkRow(landmark: landmark)
+            List {
+                // $で状態変数へバインディングにアクセス
+                Toggle(isOn: $showFavoritesOnly) {
+                    Text("Favorites only")
                 }
-            }.navigationBarTitle(Text("Landmarks"))
+                // ForEachを使う理由はListで動的ビューを表示すると、該当しないものが空行になるから
+                ForEach(landmarkData) { landmark in
+                    if !self.showFavoritesOnly || landmark.isFavorite {
+                        NavigationLink(destination: LandmarkDetail(landmark: landmark)) {
+                            LandmarkRow(landmark: landmark)
+                        }
+                    }
+                }.navigationBarTitle(Text("Landmarks"))
+            }
         }
     }
-}
-
-struct LandmarkList_Previews: PreviewProvider {
-    static var previews: some View {
-        ForEach(["iPhone SE", "iPhone XS Max", "iPad Pro (12.9-inch)"], id: \.self) { deviceName in
-            LandmarkList().previewDevice(
-                PreviewDevice(rawValue: deviceName )
-            ).previewDisplayName(deviceName)
+    
+    struct LandmarkList_Previews: PreviewProvider {
+        static var previews: some View {
+            ForEach(["iPhone SE", "iPhone XS Max", "iPad Pro (12.9-inch)"], id: \.self) { deviceName in
+                LandmarkList().previewDevice(
+                    PreviewDevice(rawValue: deviceName )
+                ).previewDisplayName(deviceName)
+            }
         }
     }
 }
