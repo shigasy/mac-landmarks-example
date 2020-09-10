@@ -11,18 +11,25 @@
 import SwiftUI
 
 struct LandmarkList: View {
-    @State var showFavoritesOnly = false
+    // 利用するView全てで共通
+    // 複数のプロパティを管理可能
+    // 変更は監視され、変更時に宣言されたViewのbodyが再描画される
+    @EnvironmentObject var userData: UserData
+    
     
     var body: some View {
         NavigationView {
             List {
                 // $で状態変数へバインディングにアクセス
-                Toggle(isOn: $showFavoritesOnly) {
+                // Binding<Value>はポインタのようなもので、最新の値を取り出したり、値を変更したりすることができる -> Toggleを操作した結果を反映することが出きる
+                Toggle(isOn: $userData.showFavoritesOnly) {
                     Text("Favorites only")
                 }
                 // ForEachを使う理由はListで動的ビューを表示すると、該当しないものが空行になるから
-                ForEach(landmarkData) { landmark in
-                    if !self.showFavoritesOnly || landmark.isFavorite {
+                ForEach(userData.landmarks) { landmark in
+                    // 参照だから$ではなく、self...
+                    // $だとBoolではなく、Binding<Bool>になる
+                    if  !self.userData.showFavoritesOnly || landmark.isFavorite {
                         NavigationLink(destination: LandmarkDetail(landmark: landmark)) {
                             LandmarkRow(landmark: landmark)
                         }
@@ -35,7 +42,7 @@ struct LandmarkList: View {
     struct LandmarkList_Previews: PreviewProvider {
         static var previews: some View {
             ForEach(["iPhone SE", "iPhone XS Max", "iPad Pro (12.9-inch)"], id: \.self) { deviceName in
-                LandmarkList().previewDevice(
+                LandmarkList().environmentObject(UserData()).previewDevice(
                     PreviewDevice(rawValue: deviceName )
                 ).previewDisplayName(deviceName)
             }

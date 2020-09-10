@@ -9,7 +9,15 @@
 import SwiftUI
 
 struct LandmarkDetail: View {
+    @EnvironmentObject var userData: UserData
     var landmark: Landmark
+    
+    // 更新する時用
+    // 常に正しいバージョンのデータにアクセスできる
+    // 親から渡されたデータのみでは更新された時のデータが表示されない
+    var landmarkIndex: Int {
+        userData.landmarks.firstIndex(where: { $0.id == landmark.id})!
+    }
     
     var body: some View {
         VStack {
@@ -34,6 +42,6 @@ struct LandmarkDetail: View {
 
 struct LandmarkDetail_Previews: PreviewProvider {
     static var previews: some View {
-        LandmarkDetail(landmark: landmarkData[1])
+        LandmarkDetail(landmark: landmarkData[1]).environmentObject(UserData())
     }
 }

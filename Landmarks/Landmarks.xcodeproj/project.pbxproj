@@ -32,6 +32,7 @@
 		D19E1A472509D74700FF8FEF /* charleyrivers.jpg in Resources */ = {isa = PBXBuildFile; fileRef = D19E1A3A2509D74600FF8FEF /* charleyrivers.jpg */; };
 		D19E1A482509D74700FF8FEF /* lakemcdonald.jpg in Resources */ = {isa = PBXBuildFile; fileRef = D19E1A3B2509D74600FF8FEF /* lakemcdonald.jpg */; };
 		D19E1A4A2509D7BB00FF8FEF /* LandmarkRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = D19E1A492509D7BB00FF8FEF /* LandmarkRow.swift */; };
+		D19E1A4C2509E26A00FF8FEF /* UserData.swift in Sources */ = {isa = PBXBuildFile; fileRef = D19E1A4B2509E26A00FF8FEF /* UserData.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -62,6 +63,7 @@
 		D19E1A3A2509D74600FF8FEF /* charleyrivers.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = charleyrivers.jpg; path = ../../../../../../../Desktop/HandlingUserInput/Complete/Landmarks/Landmarks/Resources/charleyrivers.jpg; sourceTree = "<group>"; };
 		D19E1A3B2509D74600FF8FEF /* lakemcdonald.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = lakemcdonald.jpg; path = ../../../../../../../Desktop/HandlingUserInput/Complete/Landmarks/Landmarks/Resources/lakemcdonald.jpg; sourceTree = "<group>"; };
 		D19E1A492509D7BB00FF8FEF /* LandmarkRow.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = LandmarkRow.swift; path = "../../../../../../Desktop/HandlingUserInput/Complete/Landmarks/Landmarks/Supporting Views/LandmarkRow.swift"; sourceTree = "<group>"; };
+		D19E1A4B2509E26A00FF8FEF /* UserData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserData.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -124,6 +126,7 @@
 			children = (
 				D11D444F2508CAFC000D088C /* Landmark.swift */,
 				D11D44532508D051000D088C /* Data.swift */,
+				D19E1A4B2509E26A00FF8FEF /* UserData.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -240,6 +243,7 @@
 				D11D442025076C63000D088C /* LandmarkDetail.swift in Sources */,
 				D11D44502508CAFC000D088C /* Landmark.swift in Sources */,
 				D11D44542508D051000D088C /* Data.swift in Sources */,
+				D19E1A4C2509E26A00FF8FEF /* UserData.swift in Sources */,
 				D19E1A4A2509D7BB00FF8FEF /* LandmarkRow.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
