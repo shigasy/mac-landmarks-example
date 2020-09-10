@@ -26,9 +26,15 @@ struct LandmarkList: View {
                     Text("Favorites only")
                 }
                 // ForEachを使う理由はListで動的ビューを表示すると、該当しないものが空行になるから
+                // userData.landmarksではなく、
+                // landmarkDataを渡すと、子ビューで変更しても更新されない。
+                // なぜなら、ObservedObjectではなく、状態管理が出きないから。
+                // 状態を持たないため、最初にjsonから読み込まれるlandmarkData初期値から変更されない。
                 ForEach(userData.landmarks) { landmark in
                     // 参照だから$ではなく、self...
-                    // $だとBoolではなく、Binding<Bool>になる
+                    // $だとBoolではなく、Binding<Bool>になる。
+                    // なぜselfが付いているかというと、クロージャの中で変数の参照を持つため、
+                    // 循環参照になっていないかを意識させるためにSwiftの文法上の指定が必須。
                     if  !self.userData.showFavoritesOnly || landmark.isFavorite {
                         NavigationLink(destination: LandmarkDetail(landmark: landmark)) {
                             LandmarkRow(landmark: landmark)

@@ -12,9 +12,9 @@ struct LandmarkDetail: View {
     @EnvironmentObject var userData: UserData
     var landmark: Landmark
     
-    // 更新する時用
-    // 常に正しいバージョンのデータにアクセスできる
-    // 親から渡されたデータのみでは更新された時のデータが表示されない
+    // アクセスまたは更新する時用
+    // EnvironmentObjectのuserDataを参照しているため、常に正しいバージョンのデータにアクセスできる（配列が更新されたときなど）
+    // また、idは1001など、配列を参照するデータではない
     var landmarkIndex: Int {
         userData.landmarks.firstIndex(where: { $0.id == landmark.id})!
     }
@@ -27,8 +27,20 @@ struct LandmarkDetail: View {
             // 画像を上に移動して、テキストのためのスペースを作成
             CircleImage(Image: landmark.image).offset(y: -130).padding(.bottom, -130)
             VStack(alignment: .leading) {
-                Text(landmark.name)
-                    .font(.title)
+                HStack {
+                    Text(landmark.name)
+                        .font(.title)
+                    Button(action: {
+                        self.userData.landmarks[self.landmarkIndex].isFavorite.toggle()
+                    }) {
+                        // ListとDetail両方のViewが同じモデルオブジェクトを参照するため、2つのViewは一貫性を維持する
+                        if self.userData.landmarks[landmarkIndex].isFavorite {
+                            Image(systemName: "star.fill").foregroundColor(.yellow)
+                        } else {
+                            Image(systemName: "star").foregroundColor(.gray)
+                        }
+                    }
+                }
                 HStack {
                     Text(landmark.park).font(.subheadline)
                     Spacer()
