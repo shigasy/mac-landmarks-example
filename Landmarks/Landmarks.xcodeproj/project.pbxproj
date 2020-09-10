@@ -38,6 +38,7 @@
 		D19E1A52250A10C000FF8FEF /* BadgeBackground.swift in Sources */ = {isa = PBXBuildFile; fileRef = D19E1A51250A10C000FF8FEF /* BadgeBackground.swift */; };
 		D19E1A54250A114300FF8FEF /* BadgeSymbol.swift in Sources */ = {isa = PBXBuildFile; fileRef = D19E1A53250A114300FF8FEF /* BadgeSymbol.swift */; };
 		D19E1A56250A11D700FF8FEF /* RotatedBadgeSymbol.swift in Sources */ = {isa = PBXBuildFile; fileRef = D19E1A55250A11D700FF8FEF /* RotatedBadgeSymbol.swift */; };
+		D19E1A5C250A1F6E00FF8FEF /* HikeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D19E1A5B250A1F6E00FF8FEF /* HikeView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -75,6 +76,7 @@
 		D19E1A53250A114300FF8FEF /* BadgeSymbol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BadgeSymbol.swift; sourceTree = "<group>"; };
 		D19E1A55250A11D700FF8FEF /* RotatedBadgeSymbol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RotatedBadgeSymbol.swift; sourceTree = "<group>"; };
 		D19E1A59250A1EDC00FF8FEF /* LandmarkRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LandmarkRow.swift; sourceTree = "<group>"; };
+		D19E1A5B250A1F6E00FF8FEF /* HikeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HikeView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -158,6 +160,7 @@
 				D19E1A5A250A1EE800FF8FEF /* LandmarkList */,
 				D11D442F250773A7000D088C /* CircleImage.swift */,
 				D11D443125077668000D088C /* MapView.swift */,
+				D19E1A5B250A1F6E00FF8FEF /* HikeView.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -281,6 +284,7 @@
 				D11D4430250773A7000D088C /* CircleImage.swift in Sources */,
 				D19E1A4E250A0E6800FF8FEF /* Badge.swift in Sources */,
 				D11D443225077668000D088C /* MapView.swift in Sources */,
+				D19E1A5C250A1F6E00FF8FEF /* HikeView.swift in Sources */,
 				D11D441E25076C63000D088C /* SceneDelegate.swift in Sources */,
 				D11D44562508D24E000D088C /* LandmarkList.swift in Sources */,
 				D19E1A54250A114300FF8FEF /* BadgeSymbol.swift in Sources */,
