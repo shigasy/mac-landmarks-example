@@ -123,7 +123,7 @@
 		D11D441A25076C63000D088C /* Landmarks */ = {
 			isa = PBXGroup;
 			children = (
-				D19E1A58250A1EC100FF8FEF /* View */,
+				D19E1A58250A1EC100FF8FEF /* Views */,
 				D19E1A57250A1EB700FF8FEF /* Badge */,
 				D1AB4FAC2509D3D500540F6E /* Resources */,
 				D11D44342508CAA9000D088C /* Models */,
@@ -169,20 +169,15 @@
 			path = Badge;
 			sourceTree = "<group>";
 		};
-		D19E1A58250A1EC100FF8FEF /* View */ = {
+		D19E1A58250A1EC100FF8FEF /* Views */ = {
 			isa = PBXGroup;
 			children = (
-				D19E1A5A250A1EE800FF8FEF /* LandmarkList */,
-				D11D442F250773A7000D088C /* CircleImage.swift */,
-				D11D443125077668000D088C /* MapView.swift */,
-				D19E1A5B250A1F6E00FF8FEF /* HikeView.swift */,
-				D19E1A5D250A25F800FF8FEF /* HikeGraph.swift */,
-				D19E1A63250A280F00FF8FEF /* GraphCapsule.swift */,
-				D19E1A65250B4F9600FF8FEF /* HikeDetail.swift */,
 				D19E1A67250B511200FF8FEF /* Home.swift */,
-				D19E1A69250B53FB00FF8FEF /* CategoryRow.swift */,
+				D19E1A6C250B6E1800FF8FEF /* Hike */,
+				D19E1A5A250A1EE800FF8FEF /* LandmarkList */,
+				D19E1A6B250B6DD700FF8FEF /* SupportingViews */,
 			);
-			path = View;
+			path = Views;
 			sourceTree = "<group>";
 		};
 		D19E1A5A250A1EE800FF8FEF /* LandmarkList */ = {
@@ -193,6 +188,27 @@
 				D11D44552508D24E000D088C /* LandmarkList.swift */,
 			);
 			path = LandmarkList;
+			sourceTree = "<group>";
+		};
+		D19E1A6B250B6DD700FF8FEF /* SupportingViews */ = {
+			isa = PBXGroup;
+			children = (
+				D11D442F250773A7000D088C /* CircleImage.swift */,
+				D11D443125077668000D088C /* MapView.swift */,
+				D19E1A69250B53FB00FF8FEF /* CategoryRow.swift */,
+			);
+			path = SupportingViews;
+			sourceTree = "<group>";
+		};
+		D19E1A6C250B6E1800FF8FEF /* Hike */ = {
+			isa = PBXGroup;
+			children = (
+				D19E1A5B250A1F6E00FF8FEF /* HikeView.swift */,
+				D19E1A5D250A25F800FF8FEF /* HikeGraph.swift */,
+				D19E1A63250A280F00FF8FEF /* GraphCapsule.swift */,
+				D19E1A65250B4F9600FF8FEF /* HikeDetail.swift */,
+			);
+			path = Hike;
 			sourceTree = "<group>";
 		};
 		D1AB4FAC2509D3D500540F6E /* Resources */ = {
