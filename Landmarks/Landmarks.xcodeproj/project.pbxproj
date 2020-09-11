@@ -45,6 +45,7 @@
 		D19E1A64250A280F00FF8FEF /* GraphCapsule.swift in Sources */ = {isa = PBXBuildFile; fileRef = D19E1A63250A280F00FF8FEF /* GraphCapsule.swift */; };
 		D19E1A66250B4F9600FF8FEF /* HikeDetail.swift in Sources */ = {isa = PBXBuildFile; fileRef = D19E1A65250B4F9600FF8FEF /* HikeDetail.swift */; };
 		D19E1A68250B511200FF8FEF /* Home.swift in Sources */ = {isa = PBXBuildFile; fileRef = D19E1A67250B511200FF8FEF /* Home.swift */; };
+		D19E1A6A250B53FB00FF8FEF /* CategoryRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = D19E1A69250B53FB00FF8FEF /* CategoryRow.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -89,6 +90,7 @@
 		D19E1A63250A280F00FF8FEF /* GraphCapsule.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GraphCapsule.swift; sourceTree = "<group>"; };
 		D19E1A65250B4F9600FF8FEF /* HikeDetail.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HikeDetail.swift; sourceTree = "<group>"; };
 		D19E1A67250B511200FF8FEF /* Home.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Home.swift; sourceTree = "<group>"; };
+		D19E1A69250B53FB00FF8FEF /* CategoryRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryRow.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -178,6 +180,7 @@
 				D19E1A63250A280F00FF8FEF /* GraphCapsule.swift */,
 				D19E1A65250B4F9600FF8FEF /* HikeDetail.swift */,
 				D19E1A67250B511200FF8FEF /* Home.swift */,
+				D19E1A69250B53FB00FF8FEF /* CategoryRow.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -298,6 +301,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D19E1A6A250B53FB00FF8FEF /* CategoryRow.swift in Sources */,
 				D19E1A50250A0EAD00FF8FEF /* HexagonParameters.swift in Sources */,
 				D11D441C25076C63000D088C /* AppDelegate.swift in Sources */,
 				D11D4430250773A7000D088C /* CircleImage.swift in Sources */,
