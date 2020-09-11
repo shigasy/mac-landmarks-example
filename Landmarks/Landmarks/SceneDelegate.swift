@@ -21,7 +21,7 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
 
         // Create the SwiftUI view that provides the window contents.
         // シミュレータまたはデバイスで実行する場合に、環境内にオブジェクトが存在することを保証できる
-        let contentView = LandmarkList().environmentObject(UserData())
+        let contentView = CategoryHome().environmentObject(UserData())
 
         // Use a UIHostingController as window root view controller.
         if let windowScene = scene as? UIWindowScene {

@@ -44,6 +44,7 @@
 		D19E1A62250A26DC00FF8FEF /* hikeData.json in Resources */ = {isa = PBXBuildFile; fileRef = D19E1A61250A26DC00FF8FEF /* hikeData.json */; };
 		D19E1A64250A280F00FF8FEF /* GraphCapsule.swift in Sources */ = {isa = PBXBuildFile; fileRef = D19E1A63250A280F00FF8FEF /* GraphCapsule.swift */; };
 		D19E1A66250B4F9600FF8FEF /* HikeDetail.swift in Sources */ = {isa = PBXBuildFile; fileRef = D19E1A65250B4F9600FF8FEF /* HikeDetail.swift */; };
+		D19E1A68250B511200FF8FEF /* Home.swift in Sources */ = {isa = PBXBuildFile; fileRef = D19E1A67250B511200FF8FEF /* Home.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -87,6 +88,7 @@
 		D19E1A61250A26DC00FF8FEF /* hikeData.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = hikeData.json; path = ../../../../../../../Desktop/AnimatingViewsAndTransitions/Complete/Landmarks/Landmarks/Resources/hikeData.json; sourceTree = "<group>"; };
 		D19E1A63250A280F00FF8FEF /* GraphCapsule.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GraphCapsule.swift; sourceTree = "<group>"; };
 		D19E1A65250B4F9600FF8FEF /* HikeDetail.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HikeDetail.swift; sourceTree = "<group>"; };
+		D19E1A67250B511200FF8FEF /* Home.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Home.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -175,6 +177,7 @@
 				D19E1A5D250A25F800FF8FEF /* HikeGraph.swift */,
 				D19E1A63250A280F00FF8FEF /* GraphCapsule.swift */,
 				D19E1A65250B4F9600FF8FEF /* HikeDetail.swift */,
+				D19E1A67250B511200FF8FEF /* Home.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -308,6 +311,7 @@
 				D19E1A56250A11D700FF8FEF /* RotatedBadgeSymbol.swift in Sources */,
 				D11D442025076C63000D088C /* LandmarkDetail.swift in Sources */,
 				D19E1A52250A10C000FF8FEF /* BadgeBackground.swift in Sources */,
+				D19E1A68250B511200FF8FEF /* Home.swift in Sources */,
 				D11D44502508CAFC000D088C /* Landmark.swift in Sources */,
 				D11D44542508D051000D088C /* Data.swift in Sources */,
 				D19E1A4C2509E26A00FF8FEF /* UserData.swift in Sources */,
