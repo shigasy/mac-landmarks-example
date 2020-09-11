@@ -46,7 +46,7 @@ struct CategoryHome: View {
                 .padding(.bottom, 8)
                 .listRowInsets(EdgeInsets())
                 NavigationLink(destination: LandmarkList()) {
-                    Text("See all list")
+                    Text("See all landmark")
                 }
                 
             }
