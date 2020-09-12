@@ -20,4 +20,5 @@ final class UserData: ObservableObject {
     // また、監視するプロパティは@Publishedを付与します。
     @Published var showFavoritesOnly = false
     @Published var landmarks = landmarkData
+    @Published var profile = Profile.default
 }

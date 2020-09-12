@@ -16,11 +16,19 @@ struct CategoryHome: View {
         )
     }
     
+    // self.favorites[true]でtrueにカテゴライズされたものを表示できる
+    var favorites: [Bool: [Landmark]] {
+        Dictionary(
+            grouping: userData.landmarks, by: { $0.isFavorite }
+        )
+    }
+    
     var featured: [Landmark] {
         landmarkData.filter { $0.isFeatured }
     }
     
     @State var showingProfile = false
+    @EnvironmentObject var userData: UserData
     
     var profileButton: some View {
         Button(action: { self.showingProfile.toggle() }) {
@@ -40,6 +48,12 @@ struct CategoryHome: View {
                     .clipped()
                     .listRowInsets(EdgeInsets())
                 
+                if self.favorites[true]?.count ?? 0 >= 1 {
+                    CategoryRow(categoryName: "Favorites", items: self.favorites[true]!)
+                        .padding(.bottom, 8)
+                        .listRowInsets(EdgeInsets())
+                }
+                
                 ForEach(categories.keys.sorted(), id: \.self) { key in
                     CategoryRow(categoryName: key, items: self.categories[key]!)
                 }
@@ -53,7 +67,7 @@ struct CategoryHome: View {
             .navigationBarTitle(Text("Featured"))
             .navigationBarItems(trailing: profileButton)
             .sheet(isPresented: $showingProfile) {
-                Text("User Profile")
+                ProfileHost().environmentObject(self.userData)
             }
         }
     }
@@ -68,6 +82,6 @@ struct FeaturedLandmarks: View {
 
 struct CategoryHome_Previews: PreviewProvider {
     static var previews: some View {
-        CategoryHome()
+        CategoryHome().environmentObject(UserData())
     }
 }
