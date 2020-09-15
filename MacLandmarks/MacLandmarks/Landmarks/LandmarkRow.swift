@@ -31,7 +31,18 @@ struct LandmarkRow: View {
                     .opacity(0.625)
                     .truncationMode(.middle)
             }
+            
+            Spacer()
+            
+            if landmark.isFavorite {
+               Image("star-filled")
+                   .resizable()
+                   .renderingMode(.template)
+                   .foregroundColor(.yellow)
+                   .frame(width: 10, height: 10)
+            }
         }
+        .padding(.vertical, 4)
     }
 }
 
