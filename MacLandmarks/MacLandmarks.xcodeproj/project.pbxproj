@@ -35,6 +35,7 @@
 		D178380E250E788E0047E355 /* chilkoottrail.jpg in Resources */ = {isa = PBXBuildFile; fileRef = D17837FD250E788E0047E355 /* chilkoottrail.jpg */; };
 		D178380F250E788E0047E355 /* stmarylake_feature.jpg in Resources */ = {isa = PBXBuildFile; fileRef = D17837FE250E788E0047E355 /* stmarylake_feature.jpg */; };
 		D1783810250E788E0047E355 /* rainbowlake.jpg in Resources */ = {isa = PBXBuildFile; fileRef = D17837FF250E788E0047E355 /* rainbowlake.jpg */; };
+		D19CC30B25119C1200385BC3 /* LandmarkList.swift in Sources */ = {isa = PBXBuildFile; fileRef = D19CC30A25119C1200385BC3 /* LandmarkList.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -69,6 +70,7 @@
 		D17837FD250E788E0047E355 /* chilkoottrail.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = chilkoottrail.jpg; sourceTree = "<group>"; };
 		D17837FE250E788E0047E355 /* stmarylake_feature.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = stmarylake_feature.jpg; sourceTree = "<group>"; };
 		D17837FF250E788E0047E355 /* rainbowlake.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = rainbowlake.jpg; sourceTree = "<group>"; };
+		D19CC30A25119C1200385BC3 /* LandmarkList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LandmarkList.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -127,6 +129,7 @@
 			isa = PBXGroup;
 			children = (
 				D17837DF250E77240047E355 /* LandmarkRow.swift */,
+				D19CC30A25119C1200385BC3 /* LandmarkList.swift */,
 			);
 			path = Landmarks;
 			sourceTree = "<group>";
@@ -261,6 +264,7 @@
 				D11D43FF250761B8000D088C /* ContentView.swift in Sources */,
 				D17837E8250E78160047E355 /* Profile.swift in Sources */,
 				D17837EB250E78160047E355 /* Landmark.swift in Sources */,
+				D19CC30B25119C1200385BC3 /* LandmarkList.swift in Sources */,
 				D17837EA250E78160047E355 /* Hike.swift in Sources */,
 				D11D43FD250761B8000D088C /* AppDelegate.swift in Sources */,
 				D17837E0250E77240047E355 /* LandmarkRow.swift in Sources */,
