@@ -40,6 +40,7 @@
 		D1F54747251253B0004B69FC /* NavigationPrimary.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1F54746251253B0004B69FC /* NavigationPrimary.swift */; };
 		D1F5474925125659004B69FC /* CircleImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1F5474825125659004B69FC /* CircleImage.swift */; };
 		D1F5474B251256A8004B69FC /* MapView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1F5474A251256A8004B69FC /* MapView.swift */; };
+		D1F5474D251259B3004B69FC /* NavigationDetail.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1F5474C251259B3004B69FC /* NavigationDetail.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -79,6 +80,7 @@
 		D1F54746251253B0004B69FC /* NavigationPrimary.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationPrimary.swift; sourceTree = "<group>"; };
 		D1F5474825125659004B69FC /* CircleImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CircleImage.swift; sourceTree = "<group>"; };
 		D1F5474A251256A8004B69FC /* MapView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapView.swift; sourceTree = "<group>"; };
+		D1F5474C251259B3004B69FC /* NavigationDetail.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationDetail.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -125,6 +127,7 @@
 				D1F54746251253B0004B69FC /* NavigationPrimary.swift */,
 				D1F5474825125659004B69FC /* CircleImage.swift */,
 				D1F5474A251256A8004B69FC /* MapView.swift */,
+				D1F5474C251259B3004B69FC /* NavigationDetail.swift */,
 			);
 			path = MacLandmarks;
 			sourceTree = "<group>";
@@ -272,6 +275,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D1F5474D251259B3004B69FC /* NavigationDetail.swift in Sources */,
 				D17837E9250E78160047E355 /* UserData.swift in Sources */,
 				D19CC30D25119DE900385BC3 /* Filter.swift in Sources */,
 				D1F54747251253B0004B69FC /* NavigationPrimary.swift in Sources */,
