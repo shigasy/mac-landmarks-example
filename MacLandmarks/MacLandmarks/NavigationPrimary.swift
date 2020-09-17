@@ -21,7 +21,7 @@ struct NavigationPrimary: View {
             
             LandmarkList(
                 selectedLandmark: $selectedLandmark,
-                filter: $filter
+                filter: filter
             )
             .listStyle(SidebarListStyle())
         }
