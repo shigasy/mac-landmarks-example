@@ -9,9 +9,18 @@
 import SwiftUI
 
 struct ContentView: View {
+    @State private var selectedLandmark: Landmark?
+    
     var body: some View {
-        Text("Hello, World!")
-            .frame(maxWidth: .infinity, maxHeight: .infinity)
+        NavigationView {
+            // バインディングを渡しているのは、NagivationPrimaryなどのサブビューで値を変更する必要があるから
+            NavigationPrimary(selectedLandmark: $selectedLandmark)
+            if selectedLandmark != nil {
+                // 通常の値渡しにしているのは、読み取って表示するだけだから
+                NavigationDetail(landmark: selectedLandmark!)
+            }
+        }
+        .frame(maxWidth: .infinity, maxHeight: .infinity)
     }
 }
 
@@ -19,5 +28,6 @@ struct ContentView: View {
 struct ContentView_Previews: PreviewProvider {
     static var previews: some View {
         ContentView()
+            .environmentObject(UserData())
     }
 }
